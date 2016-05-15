@@ -25,6 +25,7 @@
     <meta property="og:url" content="{{ .Permalink }}">
     {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Params.image }}<meta property="og:image" content="{{ $.Site.BaseURL }}images/{{ . }}">{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}" />
   </head>
 
   <body>
